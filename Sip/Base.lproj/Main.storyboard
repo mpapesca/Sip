@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SMS-WW-9nT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1zu-fd-tHZ"/>
+                                    <segue destination="SMS-WW-9nT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="1zu-fd-tHZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vt-CX-Cb2">
@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="1278" y="-255"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Title-->
         <scene sceneID="bVc-Cy-T6r">
             <objects>
                 <viewController id="SMS-WW-9nT" customClass="HomeViewController" customModule="Sip" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,28 +112,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sng-HP-gIh">
-                                <rect key="frame" x="24" y="37" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKw-Gh-NCl">
+                                <rect key="frame" x="17" y="31" width="39" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Menu"/>
                                 <connections>
-                                    <segue destination="UgU-Sx-qGn" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="MkE-up-PSc"/>
+                                    <segue destination="UgU-Sx-qGn" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AbV-9d-1j7"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qbs-q4-GPv">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Menu" id="G7V-cA-aeL">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Home" id="R7g-rU-RLl"/>
+                                    <tabBarItem systemItem="contacts" id="Np0-ZZ-m7T"/>
+                                    <tabBarItem title="Item" id="TDV-t3-ksN"/>
+                                </items>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </tabBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="sng-HP-gIh" secondAttribute="leading" id="QG0-PL-6xd"/>
-                            <constraint firstItem="sng-HP-gIh" firstAttribute="top" secondItem="Vhe-jc-LWq" secondAttribute="bottom" constant="17" id="eA4-fd-Yxq"/>
+                            <constraint firstItem="Qbs-q4-GPv" firstAttribute="leading" secondItem="Sna-Fg-uol" secondAttribute="leadingMargin" id="CAr-Qz-sGc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qbs-q4-GPv" secondAttribute="trailing" id="Cmc-Yr-9gn"/>
                             <constraint firstItem="ELq-mi-cEc" firstAttribute="centerX" secondItem="Sna-Fg-uol" secondAttribute="centerX" id="gJ1-YA-wY1"/>
                             <constraint firstItem="ELq-mi-cEc" firstAttribute="top" secondItem="Vhe-jc-LWq" secondAttribute="bottom" constant="8" id="jgc-h5-bhF"/>
+                            <constraint firstItem="aSH-1c-MWA" firstAttribute="top" secondItem="Qbs-q4-GPv" secondAttribute="bottom" id="uwv-Ab-sSe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="k22-ns-w01"/>
+                    <navigationItem key="navigationItem" title="Title" id="M5E-ax-EBZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loS-RA-W1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,12 +170,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57p-V1-VbK">
+                                <rect key="frame" x="531" y="37" width="52" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WIN-Ba-8bq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="CZD-Xb-dkL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9cw-tR-kQJ" firstAttribute="top" secondItem="AzI-FN-YpA" secondAttribute="bottom" constant="8" id="Dbb-VI-aaU"/>
                             <constraint firstItem="9cw-tR-kQJ" firstAttribute="centerX" secondItem="biP-EK-mBU" secondAttribute="centerX" id="Dih-Vu-4Oo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57p-V1-VbK" secondAttribute="trailing" constant="-3" id="Rz8-YH-jW6"/>
+                            <constraint firstItem="57p-V1-VbK" firstAttribute="top" secondItem="AzI-FN-YpA" secondAttribute="bottom" constant="17" id="k4h-by-ZoZ"/>
                         </constraints>
                     </view>
                 </viewController>
