@@ -17,19 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SipThis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLU-Mn-ksY">
-                                <rect key="frame" x="227" y="270" width="146" height="60"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="SipLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-17-arX">
+                                <rect key="frame" x="172" y="172" width="256" height="256"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SipThis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxK-mX-FJ6">
+                                <rect key="frame" x="227" y="104" width="146" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZLU-Mn-ksY" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="G1E-Tx-lDP"/>
-                            <constraint firstItem="ZLU-Mn-ksY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wm9-Be-53a"/>
+                            <constraint firstItem="sxK-mX-FJ6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="06p-IW-3ca"/>
+                            <constraint firstItem="sxK-mX-FJ6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="84" id="T4B-Et-DUy"/>
+                            <constraint firstItem="1qQ-17-arX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="o2O-C4-NaY"/>
+                            <constraint firstItem="1qQ-17-arX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="taT-04-5V8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,4 +44,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SipLogo" width="256" height="256"/>
+    </resources>
 </document>
