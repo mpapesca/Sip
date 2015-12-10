@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Log In View Controller-->
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="227" y="104" width="146" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-RH-7ut">
@@ -30,6 +31,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="0OO-eP-X0N"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -39,6 +41,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="ZKh-Li-h5U"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -46,27 +49,29 @@
                                 <rect key="frame" x="261" y="218" width="79" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-Hw-KyY">
                                 <rect key="frame" x="277" y="360" width="47" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Sign In"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="SMS-WW-9nT" kind="showDetail" action="showViewController:sender:" id="1zu-fd-tHZ"/>
+                                    <segue destination="SMS-WW-9nT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1zu-fd-tHZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vt-CX-Cb2">
                                 <rect key="frame" x="263" y="293" width="74" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TwB-6e-vHa" firstAttribute="centerX" secondItem="smL-qx-wbl" secondAttribute="centerX" id="6b7-wE-B3i"/>
                             <constraint firstItem="M6f-FQ-jzQ" firstAttribute="centerX" secondItem="smL-qx-wbl" secondAttribute="centerX" id="7De-QC-Zs6"/>
@@ -104,21 +109,67 @@
                                 <rect key="frame" x="262" y="28" width="77" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sng-HP-gIh">
+                                <rect key="frame" x="24" y="37" width="39" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UgU-Sx-qGn" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="MkE-up-PSc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="sng-HP-gIh" secondAttribute="leading" id="QG0-PL-6xd"/>
+                            <constraint firstItem="sng-HP-gIh" firstAttribute="top" secondItem="Vhe-jc-LWq" secondAttribute="bottom" constant="17" id="eA4-fd-Yxq"/>
                             <constraint firstItem="ELq-mi-cEc" firstAttribute="centerX" secondItem="Sna-Fg-uol" secondAttribute="centerX" id="gJ1-YA-wY1"/>
                             <constraint firstItem="ELq-mi-cEc" firstAttribute="top" secondItem="Vhe-jc-LWq" secondAttribute="bottom" constant="8" id="jgc-h5-bhF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="k22-ns-w01"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loS-RA-W1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="617"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="vkd-z8-ENM">
+            <objects>
+                <viewController id="UgU-Sx-qGn" customClass="MainMenuViewController" customModule="Sip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AzI-FN-YpA"/>
+                        <viewControllerLayoutGuide type="bottom" id="IHC-mY-sJf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="biP-EK-mBU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cw-tR-kQJ">
+                                <rect key="frame" x="264" y="28" width="72" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9cw-tR-kQJ" firstAttribute="top" secondItem="AzI-FN-YpA" secondAttribute="bottom" constant="8" id="Dbb-VI-aaU"/>
+                            <constraint firstItem="9cw-tR-kQJ" firstAttribute="centerX" secondItem="biP-EK-mBU" secondAttribute="centerX" id="Dih-Vu-4Oo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEx-pF-r63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="617"/>
         </scene>
     </scenes>
 </document>

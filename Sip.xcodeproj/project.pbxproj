@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC2B05851C19271F00BE62B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B05841C19271F00BE62B4 /* HomeViewController.swift */; };
+		EC2B05871C192B9200BE62B4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B05861C192B9200BE62B4 /* MainMenuViewController.swift */; };
 		ECF5B7081C167A8700ADAC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5B7071C167A8700ADAC5D /* AppDelegate.swift */; };
 		ECF5B70A1C167A8700ADAC5D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5B7091C167A8700ADAC5D /* LogInViewController.swift */; };
 		ECF5B70D1C167A8700ADAC5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF5B70B1C167A8700ADAC5D /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		EC2B05841C19271F00BE62B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC2B05861C192B9200BE62B4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		ECF5B7041C167A8700ADAC5D /* Sip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF5B7071C167A8700ADAC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF5B7091C167A8700ADAC5D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				ECF5B7071C167A8700ADAC5D /* AppDelegate.swift */,
 				ECF5B7091C167A8700ADAC5D /* LogInViewController.swift */,
 				EC2B05841C19271F00BE62B4 /* HomeViewController.swift */,
+				EC2B05861C192B9200BE62B4 /* MainMenuViewController.swift */,
 				ECF5B70B1C167A8700ADAC5D /* Main.storyboard */,
 				ECF5B70E1C167A8700ADAC5D /* Assets.xcassets */,
 				ECF5B7101C167A8700ADAC5D /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				ECF5B70A1C167A8700ADAC5D /* LogInViewController.swift in Sources */,
 				ECF5B7081C167A8700ADAC5D /* AppDelegate.swift in Sources */,
 				EC2B05851C19271F00BE62B4 /* HomeViewController.swift in Sources */,
+				EC2B05871C192B9200BE62B4 /* MainMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

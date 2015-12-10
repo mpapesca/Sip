@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  MainMenuViewController.swift
 //  Sip
 //
 //  Created by Michael Papesca on 12/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class MainMenuViewController: UIViewController {
     
     @IBOutlet weak var SipThisLabel: UILabel!
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        print("Home page")
+        print("Main menu")
     }
     
     
